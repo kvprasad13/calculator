@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body>
+    <main>
+      <nav class="calculator_container">
+        <h1>Calculator</h1>
+        <input id="infix_expression" class="type_text" type="text" />
+        <div class="button_grid">
+          <div class="button_container">
+            <button onclick="addTo('1');" class="digit_button">1</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('2');" class="digit_button">2</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('3');" class="digit_button">3</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('+');" class="digit_button">+</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('4');" class="digit_button">4</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('5');" class="digit_button">5</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('6');" class="digit_button">6</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('-');" class="digit_button">-</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('7');" class="digit_button">7</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('8');" class="digit_button">8</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('9');" class="digit_button">9</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('*');" class="digit_button">*</button>
+          </div>
+          <div class="button_container">
+            <button onclick="render('');" class="digit_button">clear</button>
+          </div>
+          <div class="button_container">
+            <button
+              id="digit_button_id"
+              onclick="addTo('0');"
+              class="digit_button"
+            >
+              0
+            </button>
+          </div>
+          <div onclick="getTextboxValue();" class="button_container">
+            <button class="digit_button">=</button>
+          </div>
+          <div class="button_container">
+            <button onclick="addTo('/');" class="digit_button">/</button>
+          </div>
+          <script src="calculator.js"></script>
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>
